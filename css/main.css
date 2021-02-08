@@ -1,0 +1,306 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: calibri;
+	font-size: 18px;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+#top{
+	background-image: linear-gradient(to bottom, #0387f3, #c1dffa);
+	text-shadow: 2px 2px #053c69;
+	margin: 0;
+	padding: 1%;
+	text-align: center;
+	color: rgb(193, 235, 255);
+	width: 100%;
+}	
+#top h1{
+	font-size: 55px;
+	font-family: Bradley Hand, cursive;
+	font-style: italic;
+	font-weight: 100;
+}
+#menubar{	
+	width: 15%;
+	float: left;
+	margin: 2%;
+}
+#desconto{
+	background-image: linear-gradient(to top, hsl(207, 100%, 59%),  #d0e8fc); 
+	margin: 0;
+	margin-top: 3%;
+	margin-bottom: 0;
+	width: 15%;
+	padding: 8px;
+	font-weight:  400;
+	font-size: 12px;
+	text-align: justify;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	box-shadow: 5px 5px 5px #3778da;
+	position: fixed;
+	right: 0;
+}
+.hidden{
+	display:none;
+}
+#menulist {	
+	width: 100%;
+	margin: 0;
+	padding: 1%;
+}
+.menuitem{	
+	border-radius: 2px;
+	border: 1px solid #99e2f5;
+	list-style-type: none;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 2px;
+	transition: .4s;	
+}
+.menuitem:hover{	
+	background-color:  #c1dffa;
+}
+#main{
+	margin: 2%;
+	margin-top: 0%;
+	padding: 0 0 2% 5%;
+	align-items: center;
+	display: flex;
+	width: 70%;
+}
+#inicio{
+	margin-top: 0;
+	width: 100%
+}
+.carousel-item{
+	height: 100px;
+	background-size: cover;
+}
+.corpoHora{
+	width: 100%;
+	padding: 3%;
+	margin-bottom: 2%;
+	font-family:sans-serif;
+	color: #141313;
+	background-image: linear-gradient(rgba(255, 255, 255, 0.788), rgba(255, 251, 251, 0.897)100%), url('imagens/relogio.jpg');
+	background-size: cover;
+}
+#produto, #cadastro, #contato, #inicio{
+	width: 85%;
+	margin-top: 3.5%;
+}
+.pagamentos p{
+	font-size: 40px;
+	text-align: center;
+}
+.titulosP{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+}
+.titulosProd{
+	font-size: 25px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	background-image: linear-gradient(to right, #a1d5ff, white);
+	padding: 5px;
+	text-align: center;
+	width: 100%;
+}
+#nomeprod{
+	font-family: Times New Roman;
+	color: #191970;
+}
+.item{
+	background-color: #ffffff;
+	width: 30%;
+	height: 330px;
+	border: 1px solid #99e2f5;
+	padding: 1%;
+	margin: 10px;
+	transition: .4s;
+	cursor: pointer;
+
+}
+.item:hover{
+	border: 1px solid #004f88;
+	background-image: linear-gradient(to bottom, #a1d5ffd3, #a1d5ff1e );
+}
+.item img{
+	max-width: 100%; /* imagem dentro do quadrado certinha e responsiva*/
+}
+.item p{
+	text-align: center;
+	font-weight: 800;
+	font-size: 15px;
+}
+.item select{
+	background-color: #bfe2ff7a;
+	width: 42%;
+	padding: 0.1%;
+
+}
+.tresitem{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#titleCad{
+	background-image: linear-gradient(to right, #a1d5ff, white);
+	font-size: 25px;
+	text-align: center;
+	color: black;
+	padding: 1%;
+}
+#cadastro{
+	width: 55%;
+	margin-left: 15%;
+}
+.dentrocadastro{
+	width: 100%;
+	background-color: #e4f3ff;
+	border: 1px solid #e2ffff;
+	font-weight: 600;
+	margin: auto;
+	padding-top: 2%;
+	padding-left: 4%;
+	display: flex;
+	flex-direction: column;
+}
+#title{
+	margin-top: 10%;
+	background-color: #87CEFA;
+	border-radius:4px;
+	margin: 0px;
+	font-size: 23px;
+	padding: 0;
+	text-align: center;
+}
+
+input[type=text], select, textarea{
+	width:  35%;
+	height: 30px;
+	padding: 1%;
+	margin: 1%;
+	border: 1px solid #c1dffa;
+	border-radius: 4px;
+	
+}
+input[type=date] {
+	width:  30%;
+	height: 30px;
+	padding: 1%;
+	margin: 1%;
+	border-radius: 4px;
+	border: 1px solid #c1dffa;
+}
+input[type=button] {
+	width: 25%;
+	padding: 1%;
+	margin-bottom: 3%;
+	background-color:#a4d0f7 ;
+	color: black;
+	font-weight: 600;
+	margin-top: 4%;
+	border-radius: 4px;
+	cursor: pointer;
+	transition: .3s;
+	border: 1px solid #c1dffa;
+	
+}
+input[type=button]:hover{
+	background-image: linear-gradient(to bottom, #59abee, #c1dffa);
+}
+input[type=password]{
+
+	width:  20%;
+	height: 30px;
+	padding: 1%;
+	margin: 1%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	border: 1px solid #c1dffa;
+}
+#contato{
+	width: 90%;
+}
+#enviarEmail{
+	background-color: #9fd2ff2a;
+	padding: 2%;
+	width: 50%;
+	margin: 1%;
+	margin-left: 30%;
+}
+#enviarEmail h3{
+	text-align: center;
+	margin-bottom: 2%;
+	font-size: 20px;
+}
+#titulocad{
+	background-image: linear-gradient(to right, #a1d5ff, white);
+	padding: 6px;
+	margin: 1;
+	text-align: center;
+	width: 90%x;
+}
+#contato form{
+	display: flex;
+	flex-direction: column;
+}
+#contato input, textarea{
+	border: 1px solid #a5d4fd;
+	width: 50%;
+	margin: 0;
+	margin-top: 2%;
+}
+.telefones{
+	background-color: #9fd2ff2a;
+	padding: 2%;
+	width: 50%;
+	margin: 1%;
+	margin-left: 30%;
+}
+footer{
+	text-align: center;
+	background-image: linear-gradient(to bottom, #96caf5, #c1dffa);
+	padding: 1%;
+	color: rgb(2, 2, 2);
+	font-size: 14px;
+	font-weight: 700;
+	font-family: Arial, Helvetica, sans-serif;
+	width: 100%;
+	height: 80px;
+	margin-top: 3%;
+	margin-bottom: 0;	
+	font-style: italic;
+}
+footer p{
+	padding-top: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,246 @@
+body{
+	
+	font-family: calibri;
+	font-size: 18px;
+	background-image: url(https://www.aabbcomunidade.com.br/wp-content/uploads/2016/11/Fundo-Azul.png);
+	color: white;
+}
+
+#top{
+	background-image: url(https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2020/07/estrelas-cadentes-julho-close-696x487.jpg);
+	position: relative;
+	border-radius: 10px;
+	margin: 2px;
+	padding: 4px 4px 4px 15px;
+	text-align: center;
+	font-family: Century Gothic;
+	border:  6px double #6495ED;
+	color: white;
+}	
+#menubar{
+	
+	width: 180px;
+	float: left;
+	margin: 0 20px;
+}
+#bottom{
+	
+	border-radius: 10px;
+	text-align: center;
+	background-image: url(https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2020/07/estrelas-cadentes-julho-close-696x487.jpg);
+	padding: 25px;
+	border: 6px double #6495ED;
+	color: white;
+	font-size: 18px;
+	
+}
+#menulist {
+	
+	margin: 0;
+	padding: 5px;
+}
+#titulohome{
+	font-size: 28px;
+	background-image: url(https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2020/07/estrelas-cadentes-julho-close-696x487.jpg);
+	border-radius:4px;
+	margin: 10px;
+	padding: 20px;	
+	width: 800px;
+	text-align: center;
+	font-weight: 600;
+}
+#ulhome{
+	border-radius: 2px;
+	border: 1px solid #6495ED;
+	list-style-type: none;
+	border-radius: 2px;
+	margin: 0px 250px;
+}
+
+.hidden{
+	display:none;
+}
+.menuitem{
+	
+	border-radius: 2px;
+	border: 1px solid #6495ED;
+	list-style-type: none;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 2px;
+	
+}
+.menuitem:hover{
+	
+	background-color: #87CEEB;	
+}
+.menuitem:first-child{
+	
+	background-image: url(https://img.freepik.com/vetores-gratis/ceu-estrelado-noite-paisagem-com-silhueta-de-plantas_104785-156.jpg?size=626&ext=jpg);
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 4px;
+	border: 1px solid #6495ED;
+
+}
+#main{
+	margin: 20px;
+	padding: 0px 0px 30px 60px;
+	align-items: center;
+	display: flex;
+}
+#prod{
+	font-size: 30px;
+	font-family: New Century Schoolbook;
+	background-color: #4682B4;
+	padding: 5px;
+	text-align: center;
+}
+#nomeprod{
+	font-family: Times New Roman;
+	color: #191970;
+}
+hr{
+	border-color: #6495ED;
+	width: 100%;
+}
+.item{
+	background-color: #6495ED;
+	width: 200px;
+	height: 330px;
+	border: 3px solid #87CEEB ;
+	padding: 8px 15px;
+	margin: 10px;
+	text-align: center;
+}
+.item:hover{
+	border: 5px solid #0000FF;
+}
+.tresitem{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+#cad{
+	
+	Width: 600px;
+	border-radius: 6px; 
+	border: 6px double #87CEEB;
+	margin: 15px;
+	padding:  0px 1px 10px;
+	background-color: #6495ED;
+	text-align: center;
+	aling-cad: center;
+}
+#cadastro{
+	padding: 0px 20px 30px 80px;
+	width: 500px;
+}
+.dentrocadastro{
+	width: 400px;
+	background-color: #4682B4;
+	text-align: center;
+	border: 1px solid #87CEEB;
+	font-weight: 600;
+	margin: auto;
+	border-radius: 6px;
+}
+#frasehome{
+	background-image: url(https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2020/07/estrelas-cadentes-julho-close-696x487.jpg);
+	padding: 6px;
+	margin: 1;
+	text-align: center;
+	width: 850px;
+}
+.corpocad{
+	text-align: center;
+	font-size: 20px;
+}
+#title{
+	
+	background-image: url(https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2020/07/estrelas-cadentes-julho-close-696x487.jpg);
+	border-radius:4px;
+	margin: 0px;
+	padding: 15px;
+	font-size: 23px;
+}
+
+input[type=text], select, textarea{
+	
+	width:  300px;
+	padding: 12px 20px;
+	margin: 5px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	
+}
+input[type=date] {
+	
+	width:  180px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+input[type=button] {
+	
+	width: 120px;
+	background-color: #1E90FF;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+input[type=button]:hover{
+	
+	background-color: #87CEFA;
+}
+#contato{
+	padding: 0px 0px 30px 0px;
+	width: 500px;
+}
+.info{
+	text-align: center;
+	background-color: #6495ED;
+	width: 300px;
+	height: 400px;
+	border: 3px solid #87CEEB ;
+	padding: 5px 15px;
+	margin: 10px;
+	color: blue;	
+}
+#titulocad{
+	
+	background-image: url(https://d281e75zdqqlon.cloudfront.net/wp-content/uploads/2020/07/estrelas-cadentes-julho-close-696x487.jpg);
+	padding: 6px;
+	margin: 1;
+	text-align: center;
+	width: 780px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

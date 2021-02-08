@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<title>Ilha distante</title>
+</head>
+
+<body>
+	<div id="wrapper" class="wrapper">		
+		<div id="top" class="top">
+			<h1> Ilha distante </h1>
+		</div>
+
+		<div id="inner-wrapper" class="wrapper">
+
+			<div id="menubar">
+
+				<ul id="menulist">
+
+					<li class="menuitem" onclick="home()" value="home"> <i class="fas fa-house-user"></i> Home </li>
+					<li class="menuitem" onclick="produtos()"> <i class="fas fa-shopping-cart"></i> Produtos </li>
+					<li class="menuitem" onclick="cadastro()"> <i class="fas fa-clipboard-list"></i> Cadastro </li>
+					<li class="menuitem" onclick="contato()"> <i class="fas fa-phone-alt"></i> Contato </li>
+
+				</ul>
+				
+			</div>
+			<div id='desconto'> 
+				Descontos de até <strong>10%</strong> na sua primeira compra pelo site!
+					
+			</div>
+			<div id="main">
+				<div id="inicio">
+					<h2 class='titulosProd'>Horário de atendimento presencial e telefone </h2>
+					<div class='corpoHora'>				
+						<p>
+							<strong> Segunda-feira:  </strong> 9h30 às 12h00 e 13h30 às 19h00 <br>
+							<strong> Terça-feira:</strong>  9h30 às 12h00 e 13h30 às 19h00 <br>
+							<strong> Quarta-feira: </strong> 08h00 às 12h00 e 13h30 às 18h00  <br>
+							<strong> Quinta-feira: </strong> 08h00 às 12h00 e 13h30 às 18h00 <br>
+							<strong> Sexta-feira: </strong> 08h00 às 12h00 e 13h30 às 18h00 <br>
+							<strong> Sabádo: </strong> 9h30 às 13h30 <br>
+							<strong> Domingo: </strong> fechado
+						</p>
+					</div>
+					<div class="pagamentos">
+						<h2 class='titulosProd'>Formas de pagamento</h2>
+							<p>
+									<i class="fab fa-cc-mastercard" title="Mastercard"></i>
+									<i class="fab fa-cc-visa" title="Visa"> </i>
+									<i class="fas fa-money-bill-alt" title="À vista"> </i>
+									<i class="fas fa-mobile-alt" title="Pix"></i>
+									<i class="fab fa-cc-paypal" title="PayPal"></i>
+									<i class="fas fa-file-invoice-dollar" title="Boleto"></i>
+							</p>
+					</div>				
+				</div>
+				<div id="produto" class="hidden">
+					<h1 class="titulosP"><i class='fas fa-shopping-cart'></i> Produtos </h1>
+					<div class='titulosProd' onclick="mostrar()"> Bolsas | Mochilas </div>
+					<div class='produtos' >
+						<div class='tresitem'>
+							<div class='item'> 
+								<img src='css/imagens/bolsas/bolsaBranca.jpg' title=''>
+								<p>Bolsa pequena</p>
+								<select id="bolsaBranca"> 
+									<option value="branca" disabled>Branca</option>
+									<option value="vermelha">Vermelha</option>
+									<option value="preta">Preta</option>
+									<option value="bege" disabled>Bege</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/bolsas/bolsas.jpg' title=''>
+								<p>Bolsa de palha</p>
+								<select id="bolsasPalaha"> 
+									<option value="brancaVerde">Branca com verde</option>
+									<option value="brancaRosa" disabled>Branca com rosa</option>
+									<option value="marrom">Marrom</option>
+									<option value="pretaRosa">Preta com rosa</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/bolsas/mochilaPreta.jpg' title=''>
+								<p>Mochila com zíper</p>
+								<select id="mochilaPreta"> 
+									<option value="mochilaRosa">Rosa</option>
+									<option value="mochilaPreta">Preta</option>
+								</select>
+							</div>
+							
+						</div>
+						<div class='tresitem'>
+							<div class='item'> 
+								<img src='css/imagens/bolsas/preto-verde-vermelho.jpg' title=''>
+								<p>Bolsa preta com detalhes </p>
+								<select id="bolsaPretaVerde"> 
+									<option value="verdeVermelha">Verde com vermelho</option>
+									<option value="azulBranca" disabled>Azul com branco</option>
+									<option value="vermelhaBranca">Vermelha com branca</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/bolsas/bolsaMarromPreta.jpg' title=''>
+								<p>Bolsa marrom pequena</p>
+								<select id="marrons"> 
+									<option value="marrons">Marrom claro e escuro</option>
+									<option value="pretoBranco">Preto e branco</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/bolsas/mochilaMarromAzul.jpg' title=''>
+								<p>Mochila com bolsos externos </p>
+								<select id="mochilaAzul"> 
+									<option value="azulMarrom">Azul com marrom</option>
+									<option value="pretoVermelho">Preto com vermelho</option>
+								</select>
+							</div>
+						</div>
+						<div class='tresitem'>
+							<div class='item'> 
+								<img src='css/imagens/bolsas/bolsaMarromFlor.jpg' title=''>
+								<p>Bolsa com flores</p>
+								<select id="marromFlor"> 
+									<option value="florVermelha">Flor vermelha</option>
+									<option value="florBranca">Flor branca</option>
+									<option value="florVerde" disabled>Flor verde</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/bolsas/bolsaMarrom.jpg' title=''>
+								<p>Bolsa marrom</p>
+								<select id="marrom"> 
+									<option value="marrom">Marrom</option>
+									<option value="branca" disabled>Branca</option>
+									<option value="rosa">Rosa</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/bolsas/mochilaAmarela.jpg' title=''>
+								<p>Mochila com pingentes</p>
+								<select id="amarela"> 
+									<option value="amarela">Amarela</option>
+									<option value="preta">Preta</option>
+									<option value="bege">Bege</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="prod">
+						<div class='titulosProd'> Calçados</div>
+						<div class='tresitem'>
+							<div class='item'> 
+								<img src='css/imagens/calcados/pretoCinza.jpg' title=''>
+								<p>Slin On</p>
+								<select id="pretoCinza"> 
+									<option value="pretoCinza">Preto com cinza</option>
+									<option value="pretoBranco" disabled>Preto com branco</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/calcados/coturnoAmarelo.jpg' title=''>
+								<p>Coturno</p>
+								<select id="coturnoAmarelo">  
+									<option value="amarelo">Amarelo</option>
+									<option value="vermelho">Vermelho</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/calcados/allStarAmarelo.jpg' title=''>
+								<p>All Star</p>
+								<select id="allStarAmarelo">  
+									<option value="amarelo">Amarelo</option>
+									<option value="preto">Preto</option>
+								</select>
+							</div>
+						</div>
+						<div class='tresitem'>
+							<div class='item'> 
+								<img src='css/imagens/calcados/tenisAzul.jpg' title=''>
+								<p>Tênis</p>
+								<select id="tenisAzul"> 
+									<option value="azul">Azul</option>
+									<option value="preto">Preto</option>								
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/calcados/tenisVermelho.jpg' title=''>
+								<p>Tênis</p>
+								<select id="tenisVermelho">  
+									<option value="vermelho">Vermelho</option>
+									<option value="preto">Preto</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/calcados/tenisBranco.jpg' title=''>
+								<p>Tênis</p>
+								<select id="tenisBranco"> 
+									<option value="vermelho">Vermelho</option>
+									<option value="amarelo">Amarelo</option>
+								</select>
+							</div>
+						</div>
+						<div class='tresitem'>
+							<div class='item'> 
+								<img src='css/imagens/calcados/tenisRosa.jpg' title=''>
+								<p>Tênis</p>
+								<select id="tenisRosa"> 
+									<option value="rosa">Rosa</option>
+									<option value="bege">Bege</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/calcados/saltoPrata.jpg' title=''>
+								<p>Salto alto</p>
+								<select id="saltoPrata"> 
+									<option value="prata">Prata</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/calcados/saltoPreto.jpg' title=''>
+								<p>Salto alto</p>
+								<select id="saltoPreto"> 
+									<option value="azul">Azul</option>
+									<option value="vermelho" disabled>Vermhlo</option>
+									<option value="bege">Bege</option>
+									<option value="preto">Preto</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="vaso">
+						<div class='titulosProd'> Carteira | Cinto | Brinco </div>
+						<div class='tresitem'>
+							<div class='item'> 
+								<img src='css/imagens/carteira/vermelha.jpg' title=''>
+								<p>Carteira</p>
+								<select id="vermelha"> 
+									<option value="rosa">Rosa</option>
+									<option value="bege">Bege</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/carteira/preta.jpg' title=''>
+								<p>Carteira</p>
+								<select id="preta">  
+									<option value="preta">Preta</option>
+									<option value="vermelha">Vermelha</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/carteira/marrom.jpg' title=''>
+								<p>Carteira</p>
+								<select id="marrom">  
+									<option value="marrom">Marrom</option>
+									<option value="bege">Bege</option>
+								</select>
+							</div>
+						</div>
+						<div class='tresitem'>
+							<div class='item'> 
+								<img src='css/imagens/cinto/bege.jpg' title=''>
+								<p>Cinto</p>
+								<select id="bege"> 
+									<option value="bege">Bege</option>
+									<option value="amarelo">Amarelo</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/cinto/vermelho.jpg' title=''>
+								<p>Cinto</p>
+								<select id="vermelho"> 
+									<option value="preto">Preto</option>
+									<option value="vermelho">Vermelho</option>
+									<option value="marrom">Marrom</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/cinto/brincoGrande.jpg' title=''>
+								<p>Brinco</p>
+								<select id="grande">  
+									<option value="Prata" disabled>Prata</option>
+									<option value="dourado">Dourado</option>
+								</select>
+							</div>
+						</div>
+						<div class='tresitem'>
+							<div class='item'> 
+								<img src='css/imagens/cinto/brincoPerola.jpg' title=''>
+								<p>Brinco de pérola</p>
+								<select id="perola"> 
+									<option value="branco">Branco</option>
+									<option value="preto" disabled>Preto</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/cinto/brincoEstrela.jpg' title=''>
+								<p>Brinco de estrela</p>
+								<select id="estrela"> 
+									<option value="dourado">Dourado</option>
+								</select>
+							</div>
+							<div class='item'> 
+								<img src='css/imagens/cinto/brincoDourado.jpg' title=''>
+								<p>Brinco de argola</p>
+								<select id="dourado">  
+									<option value="dourado">Dourado</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="cadastro" class="hidden">														
+					<form >
+						<h2 id='titleCad'> <i class='fas fa-clipboard-list'></i> Formulário de cadastro </h2>
+							<div class='dentrocadastro'>
+									<label> Nome: 
+										<input class='campos' type='text' placeholder='Seu nome aqui...'>
+									</label>
+									<label> Sobrenome: 
+										<input class='campos' type='text' placeholder='Seu sobrenome aqui...'>
+									</label>
+									<label> CPF/CNPJ: 
+										<input class='campos' type='text' placeholder='Seu CPF/CNPJ...' maxlength="18">
+									</label>
+									<label> Data de nascimento: 
+										<input class='campos' type='date' placeholder='Data de nascimento...'>
+									</label>
+									<label>Senha: 
+											<input type='password' class='campos' placeholder='***********'>
+									</label>
+									<label> Celular: 
+										<input class='campos' type='text' placeholder='(00) 0000-0000' maxlength="15">
+									</label>
+									<label> Telefone: 
+										<input class='campos' type='text' placeholder='(00) 0000-0000' maxlength="15">
+									</label>
+									<label> E-mail:
+										<input class='campos' type='text' placeholder='seunome@email.com'>
+									</label>
+								
+								<p>
+									<input type='checkbox' name='check1' value='Concordo' required> Li e aceito a Política de
+									Privacidade <br> e Proteção de Dados da Loja e os Termos de Uso.	
+								</p>
+								<input type='button' value='Cadastrar' onclick='cadastrar()'>
+							</div>
+					</form>					
+				</div>	
+							
+				<div id="contato" class="hidden">					
+					<h1 class="titulosP"><i class='fas fa-phone-alt'></i> Contato </h1>
+					<div class='titulosProd'>
+						<p>Algum problema ou dúvidas?</p> 
+					</div>	
+											
+					<div id='enviarEmail'>
+						<h3> <i class='fas fa-envelope'></i> Envie um e-mail </h3>	
+						<form> 
+							<label> E-mail: </label>
+								<input class='mensagem' id="emailEnviar" type='text' placeholder='nome@email.com' required> <br>
+							
+							<label> Mensagem: </label>
+								<textarea class='mensagem' id="mensagem" rows='6' maxlength="350" cols="25" minlength="10" required></textarea> 				
+							
+						</form>																
+						<input type='button' value='Enviar' onclick='msg_enviar()'> 					
+					</div>		
+						<p class='titulosProd'>Comprar sem sair de casa/Trocas/Devoluções: </p>
+									
+						<p class='telefones'>
+							<i class='fab fa-whatsapp'></i> <strong>Whatsapp:</strong> (00) 0000-0000 <br> 
+							<i class='fas fa-phone-alt'></i> <strong>Celular:</strong> (00) 0000-0000 <br>
+							<i class='fas fa-phone-alt'></i> <strong>Telefone:</strong> (00) 0000-0000 </br>
+							<i class='fas fa-envelope'></i> <strong>E-mail:</strong> trocasedevolucao@pedidos.loja.com
+						</p>		
+				</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<footer>
+		<p>Endereço: Rua Algum lugar distante, número 120, Florianópolis-SC <br> Todos os direitos reservados!</p> 
+	</footer>	
+
+	<script src="https://kit.fontawesome.com/e0f6140325.js" crossorigin="anonymous"></script>
+	<script src="js/index.js"></script>
+
+</body>
+</html>
